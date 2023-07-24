@@ -1,0 +1,46 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <title>Checkout</title>
+  <include src="fragments/head.html"></include>
+</head>
+
+<body>
+<include src="components/header.html"></include>
+<main>
+  <section class="app-p-checkout app-u-mat-section">
+    <div class="app-u-mat-section__header">
+      <h1>Checkout</h1>
+    </div>
+    <div class="app-u-mat-section__content app-u-flex-container-center">
+      <div class="app-u-mat-card app-c-checkout">
+        <div class="app-u-mat-card__content">
+          <div class="app-c-checkout__item-list">
+            <each loop="item in Array.from(Array(10).keys())">
+              <div class="app-c-checkout__item-list__item">
+                <include src="components/cart-item.html"></include>
+              </div>
+            </each>
+          </div>
+          <div class="app-u-mat-divider"></div>
+          <div class="app-c-checkout__total">
+            <span>Total:</span>
+            <span>2000$</span>
+          </div>
+        </div>
+        <div class="app-u-mat-card__actions">
+          <button class="app-u-mat-button app-c-checkout__submit" type="submit">
+            Checkout
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<include src="components/footer.html"></include>
+
+<include src="fragments/scripts.html"></include>
+</body>
+
+</html>

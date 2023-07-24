@@ -1,0 +1,25 @@
+.app-u-flex-push-right {
+  margin-left: auto;
+}
+
+.app-u-flex-push-left {
+  margin-right: auto;
+}
+
+.app-u-flex-push-top {
+  margin-bottom: auto;
+}
+
+.app-u-flex-push-bottom {
+  margin-top: auto;
+}
+
+.app-u-flex-container-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-u-flex-1-0-auto {
+  flex: 1 0 auto;
+}

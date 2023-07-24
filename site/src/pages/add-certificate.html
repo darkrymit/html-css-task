@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <title>Add certificate</title>
+  <include src="fragments/head.html"></include>
+</head>
+
+<body>
+<include src="components/header.html"></include>
+<main>
+<section class="app-p-add-certificate app-u-mat-section">
+    <div class="app-u-mat-section__header">
+      <h1>Add certificate</h1>
+    </div>
+    <div class="app-u-mat-section__content app-u-flex-container-center">
+      <div class="app-u-mat-card">
+        <div class="app-u-mat-card__content">
+          <form class="app-p-add-certificate__form app-u-flex-container-center" action="/certificates" method="post">
+            <div class="app-u-mat-form-field app-u-mat-form-field--required">
+              <label class="app-u-mat-form-field__label" for="name">Name</label>
+              <input class="app-u-mat-form-field__input" id="name" name="name" type="text"
+                     required>
+            </div>
+            <div class="app-u-mat-form-field app-u-mat-form-field--required">
+              <label class="app-u-mat-form-field__label" for="description">Description</label>
+              <textarea style="resize: none" maxlength="200"
+                class="app-u-mat-form-field__input" id="description" name="description"
+                        required></textarea>
+            </div>
+            <div class="app-u-mat-form-field app-u-mat-form-field--required">
+              <label class="app-u-mat-form-field__label" for="price">Price</label>
+              <input class="app-u-mat-form-field__input" id="price" name="price" type="number" min="1"
+                     required>
+            </div>
+            <div class="app-u-mat-form-field app-u-mat-form-field--required">
+              <label class="app-u-mat-form-field__label" for="duration">Duration</label>
+              <input class="app-u-mat-form-field__input" id="duration" name="duration"
+                     type="number" required>
+            </div>
+            <div class="app-u-mat-form-field app-u-mat-form-field--required">
+              <label class="app-u-mat-form-field__label" for="tags">Tags</label>
+              <input class="app-u-mat-form-field__input" id="tags" name="tags" type="text"
+                     required>
+            </div>
+            <button class="app-p-add-certificate__form__submit app-u-mat-button" type="submit">Add</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<include src="components/footer.html"></include>
+
+<include src="fragments/scripts.html"></include>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+.app-p-signup {
+  &.app-u-mat-section{
+    flex-direction: column;
+    border-radius: 20px;
+
+    .app-u-mat-section__header{
+      border-radius: 20px 20px 0 0;
+    }
+  }
+
+  &__form {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    &__submit {
+      width: 100%;
+    }
+  }
+}

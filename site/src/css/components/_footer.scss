@@ -1,0 +1,14 @@
+.app-c-footer {
+  flex: 0 0 auto;
+  margin-top: auto;
+
+  display: flex;
+  padding: 1rem 1rem;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 20px 0 0;
+
+  background-color: $color-main;
+  color: white;
+}

@@ -1,0 +1,10 @@
+{
+    "plugins": {
+        "posthtml-include": {
+            "root": "./site/src"
+        },
+        "posthtml-expressions": {
+
+        }
+    }
+}

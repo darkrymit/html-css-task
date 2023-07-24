@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <title>Sign up</title>
+  <include src="fragments/head.html"></include>
+</head>
+
+<body>
+<include src="components/header.html"></include>
+<main>
+  <div class="app-u-flex-1-0-auto app-u-flex-container-center">
+    <section class="app-p-signup app-u-mat-section">
+      <div class="app-u-mat-section__header">
+        <h1>Sign up</h1>
+      </div>
+      <div class="app-u-mat-section__content">
+        <form class="app-p-signup__form app-u-flex-container-center">
+          <div class="app-u-mat-form-field app-u-mat-form-field--required">
+            <label class="app-u-mat-form-field__label" for="firstname">First Name</label>
+            <input class="app-u-mat-form-field__input" id="firstname" placeholder="First Name" type="text">
+          </div>
+          <div class="app-u-mat-form-field app-u-mat-form-field--required">
+            <label class="app-u-mat-form-field__label" for="lastname">Last Name</label>
+            <input class="app-u-mat-form-field__input" id="lastname" placeholder="Last Name" type="text">
+          </div>
+          <div class="app-u-mat-form-field app-u-mat-form-field--required">
+            <label class="app-u-mat-form-field__label" for="username">Email</label>
+            <input class="app-u-mat-form-field__input" id="username" placeholder="example@gmail.com" type="email">
+          </div>
+          <div class="app-u-mat-form-field app-u-mat-form-field--required">
+            <label class="app-u-mat-form-field__label" for="password">Password</label>
+            <input class="app-u-mat-form-field__input" id="password" placeholder="password" type="password">
+          </div>
+          <div class="app-u-mat-form-field app-u-mat-form-field--required">
+            <label class="app-u-mat-form-field__label" for="confirm-password">Confirm Password</label>
+            <input class="app-u-mat-form-field__input" id="confirm-password" placeholder="password" type="password">
+          </div>
+          <button class="app-p-signup__form__submit app-u-mat-button" type="submit">Create an Account</button>
+        </form>
+        <div class="app-p-signup__create-account app-u-flex-container-center"><a href="/signin">Sign in</a></div>
+      </div>
+    </section>
+  </div>
+</main>
+<include src="components/footer.html"></include>
+
+<include src="fragments/scripts.html"></include>
+</body>
+
+</html>

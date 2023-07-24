@@ -1,0 +1,11 @@
+.app-c-certificate-mini-card{
+  max-width: 250px;
+}
+.app-c-certificate-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 1rem;
+  justify-items: center;
+  align-items: center;
+}

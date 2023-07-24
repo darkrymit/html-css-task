@@ -1,0 +1,13 @@
+.app-p-add-certificate{
+
+  &__form {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    &__submit {
+      width: 100%;
+    }
+  }
+}

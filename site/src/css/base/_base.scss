@@ -1,0 +1,26 @@
+
+html,body {
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  flex: 1 0 auto;
+  display: flex;
+  margin: 0.5rem;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.app-u-reset-margin{
+  margin: 0 !important;
+}
+
+
+

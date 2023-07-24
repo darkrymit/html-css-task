@@ -1,0 +1,21 @@
+.app-c-certificate-mini-card {
+  width: 100%;
+  height: 100%;
+
+  &__image {
+    border-radius: 0.25rem;
+    border: 2px solid #ccc;
+    margin: 0.25rem;
+  }
+  &__link{
+    text-decoration: none;
+    color: unset;
+  }
+
+  .app-u-mat-card__actions {
+    .app-u-mat-button {
+      background: none;
+      color: black;
+    }
+  }
+}

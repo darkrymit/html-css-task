@@ -1,0 +1,74 @@
+
+.app-c-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  flex: 0 0 auto;
+
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 20px 20px;
+  background-color: $color-main;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+
+  .app-c-brand {
+    user-select: none;
+
+    &__icon-wrapper {
+      width: 70px;
+      height: 70px;
+
+      background-color: $color-main;
+
+      border-radius: 50%;
+      padding: 0;
+
+      text-decoration: none;
+
+      &__icon {
+        color: $color-light-blue;
+        font-size: 48px;
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+
+  .app-c-sidenav-toggle {
+    &__button {
+      border-radius: 20px;
+    }
+  }
+
+  .app-c-cart {
+    &__link {
+      border-radius: 20px;
+    }
+  }
+
+  .app-c-sign {
+    &__button {
+      border-radius: 20px;
+    }
+  }
+
+  .app-c-search {
+    flex-grow: 1;
+
+    &__form {
+      flex: 1 0 auto;
+      background: white;
+      border-radius: 5px 5px 0 0;
+
+      &__input {
+        flex: 1 0 auto;
+        border: none;
+        outline: none;
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+}

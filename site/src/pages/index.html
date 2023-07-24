@@ -1,0 +1,24 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <title>Main</title>
+  <include src="fragments/head.html"></include>
+</head>
+
+<body>
+<include src="components/header.html"></include>
+<main>
+
+  <div class="app-c-certificate-container">
+    <each loop="item in Array.from(Array(100).keys())">
+      <include src="components/certificate-mini-card.html"></include>
+    </each>
+  </div>
+</main>
+<include src="components/footer.html"></include>
+
+<include src="fragments/scripts.html"></include>
+</body>
+
+</html>

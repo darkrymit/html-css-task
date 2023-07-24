@@ -1,0 +1,37 @@
+{
+  "name": "html-css-task",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [
+    "html",
+    "css",
+    "sass",
+    "parcel"
+  ],
+  "license": "",
+  "author": "",
+  "scripts": {
+    "build": "parcel build site/src/pages/*.html --dist-dir site/dist --public-url /",
+    "build-watch": "parcel watch site/src/pages/*.html --dist-dir site/dist --public-url /",
+    "server": "node server/src/index.js",
+    "server-watch": "nodemon server/src/index.js",
+    "start-watch": "concurrently --kill-others \"npm run build-watch\" \"npm run server-watch\"",
+    "start": "npm run build && npm run server",
+    "dev": "npm run start-watch"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.9.3",
+    "@parcel/transformer-posthtml": "^2.9.3",
+    "@parcel/transformer-sass": "^2.9.3",
+    "@parcel/transformer-webmanifest": "^2.9.3",
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.1",
+    "parcel": "^2.9.3",
+    "posthtml-expressions": "^1.11.1",
+    "posthtml-include": "^1.7.4",
+    "sass": "^1.63.6"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
