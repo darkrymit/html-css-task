@@ -11,7 +11,7 @@
   </div>
   <div class="app-c-search app-u-flex-container-center">
     <form class="app-c-search__form app-u-flex-container-center">
-      <input autocomplete="off" class="app-c-search__form__input" placeholder="Type what you need" type="text">
+      <input autocomplete="off" class="app-c-search__form__input" placeholder="Type what you need" oninput="app.functions.onHeaderSearchChange(this.value)" type="text">
       <button class="app-c-search__form__button app-u-mat-icon-button" type="submit"><span
         class="material-symbols-rounded app-c-search__form__button__icon app-u-mat-icon app-u-reset-margin">search</span>
       </button>
